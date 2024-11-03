@@ -383,6 +383,19 @@ CREATE TABLE IF NOT EXISTS log_event (
 USE casedb; /* UPDATED 2024-02-26 */
 
 /* INSERTS */
+
+INSERT INTO City (name, established, averageTemp) VALUES
+('Helsinki', '1550-06-12', 7.0),
+('Tampere', '1779-08-01', 6.5),
+('Oulu', '1605-01-01', 4.0),
+('Turku', '1229-01-01', 6.1),
+('Espoo', '1960-01-01', 8.2),
+('Vantaa', '1974-01-01', 7.5),
+('Lahti', '1905-01-01', 5.9),
+('Jyväskylä', '1837-01-01', 7.8),
+('Kuopio', '1775-01-01', 6.0),
+('Rovaniemi', '1852-01-01', 2.5);
+
 /* --- Insert: GlobalSettings --- */
 INSERT INTO GlobalSetting(variable, description, numberValue, textValue) VALUES
     ('highPriority', 'High priority value', 800, NULL),

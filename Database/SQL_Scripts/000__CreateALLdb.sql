@@ -61,6 +61,13 @@ USE casedb; /* UPDATED 2024-01-24 */
 
 /* --- 01 CREATE TABLES --- */
 
+CREATE TABLE City (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(200) NOT NULL,
+    established DATE,
+    averageTemp DECIMAL(5,1)
+);
+
 CREATE TABLE IF NOT EXISTS GlobalSetting (
     id              INTEGER                     NOT NULL AUTO_INCREMENT,
     variable            VARCHAR(255)   UNIQUE       NOT NULL,

@@ -261,6 +261,18 @@ export const createTimeValidatorChain = (
     .bail(),
 ];
 
+export const createDateValidatorChain = (
+  fieldName: string,
+): ValidationChain[] => [
+  check(`${fieldName}`)
+    .matches(/^([1-2][0-9][0-9][0-9])-([0-1][0-9])-([0-3][0-9])$/)
+    .withMessage('Accepted format: 1999-12-31, year from 1000 to 2999')
+    .bail()
+    .notEmpty()
+    .withMessage('Cannot be empty')
+    .bail(),
+];
+
 export const createTimeLengthValidatorChainHoursAndMinutes = (
   fieldName: string,
 ): ValidationChain[] => [

@@ -83,3 +83,10 @@ export interface RoomsByAllocId {
   requiredHours: string;
   spaceTypeId: string;
 }
+
+export interface City {
+  id: number;
+  name: string;
+  established: Date;
+  averageTemp: number;
+}

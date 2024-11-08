@@ -1,0 +1,62 @@
+### 1. Reset database before performing tests
+GET {{host}}/resetDatabase
+Authorization: Basic {{token}}
+
+### 2. Get all cities (Test the GET /city function)
+GET {{host}}/city
+Authorization: Basic {{token}}
+
+### 3. Search for cities with "burg" in the name (Test GET /city/burg)
+GET {{host}}/city/burg
+Authorization: Basic {{token}}
+
+### 4. Search cities by text (Test POST /city/search)
+POST {{host}}/city/search
+Authorization: Basic {{token}}
+Content-Type: application/json
+
+{
+    "searchText": "New"
+}
+
+### 5. Add a new city (Test POST /city)
+POST {{host}}/city
+Authorization: Basic {{token}}
+Content-Type: application/json
+
+{
+    "name": "New City",
+    "established": "1800-01-01",
+    "averageTemp": 20.5
+}
+
+### Confirm new city by getting all cities again
+GET {{host}}/city
+Authorization: Basic {{token}}
+
+### 6. Get cities established before a certain date (Test POST /city/establishedBefore)
+POST {{host}}/city/establishedBefore
+Authorization: Basic {{token}}
+Content-Type: application/json
+
+{
+    "established": "1850-01-01"
+}
+
+### 7. Update the newly created city (Test PUT /city/:id)
+@nextId=404  // Aseta ID, jota käytetään, jos testidata palauttaa seuraavan ID:n 404
+
+PUT {{host}}/city/{{nextId}}
+Authorization: Basic {{token}}
+Content-Type: application/json
+
+{
+    "id": {{nextId}},
+    "name": "Updated City Name",
+    "established": "1900-01-01",
+    "averageTemp": 22.5
+}
+
+### 8. Confirm the update by retrieving the updated city
+GET {{host}}/city/{{nextId}}
+Authorization: Basic {{token}}

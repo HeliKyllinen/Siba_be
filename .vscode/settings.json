@@ -6,10 +6,10 @@
       },
   
       "adminEnv": {
-        "token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjAxLCJlbWFpbCI6ImFkbWluIiwiaXNBZG1pbiI6MSwiaXNQbGFubmVyIjowLCJpc1N0YXRpc3QiOjAsImlhdCI6MTczMDY1NTU4NSwiZXhwIjoxNzMwNzQxOTg1fQ.9iV8YYiYCqfeNQH5MTzZF4fmQ-6nIz6ZHolz6vmCi58"
+        "token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjAxLCJlbWFpbCI6ImFkbWluIiwiaXNBZG1pbiI6MSwiaXNQbGFubmVyIjowLCJpc1N0YXRpc3QiOjAsImlhdCI6MTczMTA4OTMxMiwiZXhwIjoxNzMxMTc1NzEyfQ.EUKYztWLWlAgAZuSoz0FYfn8ynULUZAqzk3p6v5MUws"
       },
       "plannerEnv": {
-        "token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjAyLCJlbWFpbCI6InBsYW5uZXIiLCJpc0FkbWluIjowLCJpc1BsYW5uZXIiOjEsImlzU3RhdGlzdCI6MCwiaWF0IjoxNzMwNjU3Mzk4LCJleHAiOjE3MzA3NDM3OTh9.rInCQOif4hz-ymUztmypkvHsbV83XLPav-6DekliDpQ"
+        "token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjAyLCJlbWFpbCI6InBsYW5uZXIiLCJpc0FkbWluIjowLCJpc1BsYW5uZXIiOjEsImlzU3RhdGlzdCI6MCwiaWF0IjoxNzMxMDg5NDc3LCJleHAiOjE3MzExNzU4Nzd9.7wdo9ey7S7cpsoySPvDvzzoIpS4vVcAlDx4L7VP41qM"
       },
       "statistEnv": {
         "token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjAzLCJlbWFpbCI6InN0YXRpc3QiLCJpc0FkbWluIjowLCJpc1BsYW5uZXIiOjAsImlzU3RhdGlzdCI6MSwiaWF0IjoxNzMwNjU3NDI4LCJleHAiOjE3MzA3NDM4Mjh9.26fJnyOP2kEMKL6tIdQHkB1seIkBohE9-SF7VWilvAQ"
